@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+}
+
+nav {
+  margin: 20px 0px 0px 60px;
+  text-decoration: none;
+}
+
+nav h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+nav h3 {
+  font-family: 'Fira Code', monospace;
+  font-weight: 200;
+}
+
+nav .nav_menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+nav .nav_menu a {
+  font-family: 'Fira Code', monospace;
+  font-weight: 200;
+  margin: 20px 40px 0px 0px;
+  color: black;
+  text-decoration: none;
+}
+
+.all_infosection {
+  margin: 10px 40px 0px 60px;
+  line-height: 1.6;
+}
+
+.all_infosection .about {
+  width: 700px;
+  background-color: #F7F3F2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.all_infosection .about p {
+  margin-bottom: 10px;
+}
+
+.all_infosection .experience .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F7F3F2;
+  padding: 10px;
+  border-radius: 10px;
+  width: 850px;
+  margin-top: 20px;
+}
+
+.all_infosection .experience .title .ano {
+  margin-top: 5px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.all_infosection .experience .title .job_role {
+  font-weight: 500;
+}
+
+.all_infosection .experience .title .list {
+  margin-top: 10px;
+  font-size: 14px;
+  width: 850px;
+}
+
+.all_infosection .experience .title .list p {
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=style.css.map */
