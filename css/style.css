@@ -20,67 +20,109 @@ nav h3 {
   font-weight: 200;
 }
 
-nav .nav_menu {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-}
-
-nav .nav_menu a {
+.tabs {
   font-family: 'Fira Code', monospace;
   font-weight: 200;
-  margin: 20px 40px 0px 0px;
-  color: black;
-  text-decoration: none;
+  margin-left: 60px;
+  margin-top: 20px;
 }
 
-.all_infosection {
-  margin: 10px 40px 0px 60px;
-  line-height: 1.6;
+.tabs .tab {
+  display: inline-block;
+  background-color: grey;
+  padding: 0.75rem;
+  color: #fff;
 }
 
-.all_infosection .about {
+.tabs .selected {
+  background-color: red;
+}
+
+.tabs .hidden {
+  display: none;
+}
+
+.tabs .about {
   width: 700px;
   background-color: #F7F3F2;
   padding: 10px;
   border-radius: 10px;
 }
 
-.all_infosection .about p {
+.tabs .about p {
   margin-bottom: 10px;
 }
 
-.all_infosection .experience .title {
+.tabs .experience .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #F7F3F2;
+  background-color: #F9D423;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 850px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
-.all_infosection .experience .title .ano {
+.tabs .experience .title .ano {
   margin-top: 5px;
   margin-right: 20px;
   font-size: 12px;
   font-weight: 600;
 }
 
-.all_infosection .experience .title .job_role {
+.tabs .experience .title .job_role {
   font-weight: 500;
 }
 
-.all_infosection .experience .title .list {
+.tabs .experience .title .list {
   margin-top: 10px;
   font-size: 14px;
   width: 850px;
 }
 
-.all_infosection .experience .title .list p {
+.tabs .experience .title .list p {
   margin-bottom: 5px;
+}
+
+.tabs .skills {
+  margin-top: 40px;
+}
+
+.tabs .skills #container {
+  width: 700px;
+}
+
+.tabs .skills #container .progress {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.tabs .skills #container .progress p {
+  font-size: 12px;
+}
+
+.tabs .skills #container .progress div {
+  height: 10px;
+  width: 0;
+  -webkit-transition: width 2s ease-in;
+  transition: width 2s ease-in;
+}
+
+.tabs .contact {
+  width: 500px;
+  background-color: #F9D423;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.tabs .contact p {
+  margin-bottom: 10px;
+}
+
+.tabs .all_infosection {
+  margin: 10px 40px 0px 60px;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=style.css.map */
