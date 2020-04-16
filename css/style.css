@@ -1,6 +1,20 @@
 * {
   margin: 0;
+  padding: 0;
   font-family: 'Fira Code', monospace;
+}
+
+body {
+  background-color: #46344e;
+  color: #d1e8e2;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -3;
 }
 
 nav {
@@ -28,14 +42,23 @@ nav h3 {
 }
 
 .tabs .tab {
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 2px;
   display: inline-block;
-  background-color: grey;
+  background-color: #faed26;
   padding: 0.75rem;
-  color: #fff;
+  color: #272727;
+}
+
+.tabs .tab:hover {
+  font-weight: 600;
 }
 
 .tabs .selected {
-  background-color: red;
+  background-color: #222629;
+  font-weight: 500;
+  color: #a39996;
 }
 
 .tabs .hidden {
@@ -44,24 +67,27 @@ nav h3 {
 
 .tabs .about {
   width: 700px;
-  background-color: #F7F3F2;
   padding: 10px;
-  border-radius: 10px;
 }
 
 .tabs .about p {
   margin-bottom: 10px;
 }
 
+.tabs .experience {
+  margin-bottom: 30px;
+}
+
 .tabs .experience .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #F9D423;
+  background-color: #222629;
   padding: 10px;
   border-radius: 5px;
   width: 850px;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .tabs .experience .title .ano {
@@ -81,47 +107,62 @@ nav h3 {
   width: 850px;
 }
 
-.tabs .experience .title .list p {
-  margin-bottom: 5px;
+.tabs .carousel {
+  width: 525px;
+}
+
+.tabs .carousel img {
+  border: 1px solid  #222629;
+  border-radius: 5px;
+  opacity: 0.6;
 }
 
 .tabs .skills {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
-.tabs .skills #container {
-  width: 700px;
+.tabs .skills #skill-barometer {
+  padding: 20px;
+  width: 525px;
+  background-color: #222629;
 }
 
-.tabs .skills #container .progress {
+.tabs .skills #skill-barometer .progressbar {
   width: 400px;
+  margin-bottom: 20px;
+}
+
+.tabs .skills #skill-barometer .progressbar p {
+  font-size: 12px;
   margin-bottom: 10px;
 }
 
-.tabs .skills #container .progress p {
-  font-size: 12px;
-}
-
-.tabs .skills #container .progress div {
+.tabs .skills #skill-barometer .progressbar div {
   height: 10px;
   width: 0;
-  -webkit-transition: width 2s ease-in;
-  transition: width 2s ease-in;
 }
 
 .tabs .contact {
-  width: 500px;
-  background-color: #F9D423;
-  padding: 10px;
-  border-radius: 5px;
+  width: 525px;
+  padding: 5px;
   margin-top: 5px;
 }
 
-.tabs .contact p {
+.tabs .contact .contact_links {
   margin-bottom: 10px;
 }
 
-.tabs .all_infosection {
+.tabs .contact .contact_links a {
+  color: #d1e8e2;
+  text-decoration: none;
+}
+
+.tabs .contact .contact_links a:hover {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.all_infosection {
   margin: 10px 40px 0px 60px;
   line-height: 1.6;
 }
