@@ -1,4 +1,3 @@
-Me = "Front-end engineer, design systems enthusiast  also Linux Lover" 
+Me = ['Front-end engineer', 'Design systems enthusiast', 'Linux Lover'] 
 
-
-https://wwwbrunagon.github.io/
+>> https://wwwbrunagon.github.io/
