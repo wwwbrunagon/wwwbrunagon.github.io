@@ -9,11 +9,12 @@ body{
     color:#d1e8e2;
 }
 
-.background {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
+#particles-js{
+    // position: relative;
+    // display: block;
+    // top: 0;
+    // left: 0;
+    // background-position: 50% 50%;
     z-index: -3;
   }
 
@@ -34,7 +35,7 @@ nav{
     }
 }
 
-.tabs{         
+.tabs{        
     font-family: 'Fira Code', monospace;
     font-weight: 200;
     margin-left: 60px;

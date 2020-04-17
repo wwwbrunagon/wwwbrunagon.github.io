@@ -51,7 +51,7 @@ function createProgressBar(percentage, containerDiv) {
 let particles = Particles.init({
   selector: '.background',
   color: ['#5a5560', '#404B69'],
-  connectParticles: true,
+  connectParticles: false,
   responsive: [{
     breakpoint: 800,
     options: {
