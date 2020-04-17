@@ -2,13 +2,13 @@
     margin: 0;    
     padding: 0;
     font-family: 'Fira Code', monospace;
-    // font-family: 'Raleway', sans-serif;
 }
 
 body{
     background-color:#46344e;
     color:#d1e8e2;
 }
+
 .background {
     position: absolute;
     display: block;
@@ -58,108 +58,151 @@ nav{
     background-color: #222629;
     font-weight: 500;
     color: #a39996;    
-  }  
+    }   
 
-  .hidden {
+  .hidden { 
     display:none;
-}
-
-.about{        
-    width: 700px;
-    padding: 10px;
-
-    p{
-        margin-bottom: 10px;
     }
-}
 
-.experience{   
-    margin-bottom: 30px;      
-    .title{
-        display: flex;            
-        background-color:#222629;
+    .about{        
+        width: 700px;
         padding: 10px;
-        border-radius: 5px;
-        width: 850px;
-        margin-top:5px;
-        margin-bottom: 10px;
-        .ano{
-            margin-top: 5px;
-            margin-right: 20px;
-            font-size: 12px;
-            font-weight: 600;
+
+        p{
+            margin-bottom: 10px;
         }
-        .job_role{
-            font-weight: 500;
-        }
-        .list{
-            margin-top: 10px;
-            font-size: 14px;
-            width: 850px;
-            p{
-                // margin-bottom: 5px;
-            }
-        }
-    }
-}
-.carousel{
-    width: 525px;
-    img {
-        border: 1px solid  #222629;
-        border-radius: 5px;
-        opacity: 0.6;
-      }
 
-
-}
-
-.skills{
-    margin-top: 10px; 
-    margin-bottom: 30px;
-    
-    #skill-barometer { 
-        padding: 20px;
-        width: 525px;
-        background-color: #222629;  
-        
-        .progressbar {
-            width: 400px;
-            margin-bottom: 20px;
-            p{
-                font-size: 12px;
-                margin-bottom: 10px;
-            }
-            
-            div {           
-            height: 10px;
-            width: 0;
-            }
-        }
-    }
-}
-
-.contact{
-    width: 525px;
-    padding: 5px; 
-    margin-top:5px;
-
-    .contact_links{
-        margin-bottom: 10px;
         a{
             color:#d1e8e2;
             text-decoration: none;
+            background-color: #222629;
+            padding: 3px;
+            font-size: 12px;
             &:hover{
-                font-weight: 800;
-                font-size: 18px;
+                font-weight: 500;
+                font-size: 13px;
+            }            
+        }
+        
+    }
+
+    .experience{   
+        margin-bottom: 30px;      
+        .title{
+            display: flex;            
+            background-color:#222629;
+            padding: 10px;
+            border-radius: 5px;
+            width: 850px;
+            margin-top:5px;
+            margin-bottom: 10px;
+            .ano{
+                margin-top: 5px;
+                margin-right: 20px;
+                font-size: 12px;
+                font-weight: 600;
             }
+            .job_role{
+                font-weight: 500;
+            }
+            .list{
+                margin-top: 10px;
+                font-size: 14px;
+                width: 850px;
             }
         }
     }
+
+    .portifolio{
+        width: 525px;
+        background-color: #222629; 
+        padding: 20px;
+        margin-bottom: 40px;
+
+        .links{            
+            margin-bottom: 15px;
+            a{
+                color:#d1e8e2;
+                text-decoration: none; 
+                font-size: 15px;
+                &:hover{
+                    font-weight: 500;
+                    font-size: 16px;
+                }            
+            }
+        }
+
+        img {
+            border: 1px solid  #222629;
+            border-radius: 5px;            
+        }
+
+        .next, .prev{
+            background-color: #272727;
+            border-radius: 10px;           
+        }
+        
+        .caption{
+            opacity: 0.6;
+            position: static;  
+            padding-bottom: 0px;            
+            a{
+                color:#d1e8e2;
+                text-decoration: none;
+              
+                &:hover{
+                    color:#faed26;
+                }
+            }            
+        }
+
+    }
+
+    .skills{
+        margin-top: 10px; 
+        margin-bottom: 30px;
+        
+        #skill-barometer { 
+            padding: 20px;
+            width: 525px;
+            background-color: #222629;  
+            
+            .progressbar {
+                width: 400px;
+                height: 60px;
+                margin-bottom: 20px;
+                p{
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                }
+                
+                div {           
+                height: 10px;
+                width: 0;
+                }
+            }
+        }
+    }
+
+    .contact{
+        width: 525px;
+        padding: 5px; 
+        margin-top:5px;
+
+        .contact_links{
+            margin-bottom: 10px;
+            a{
+                color:#d1e8e2;
+                text-decoration: none;
+                &:hover{
+                    font-weight: 800;
+                    font-size: 18px;
+                }
+                }
+            }
+        }
+      
 }
 
 
-.all_infosection{
-    margin: 10px 40px 0px 60px; 
-    line-height: 1.6;    
-    }
 

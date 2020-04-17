@@ -74,6 +74,19 @@ nav h3 {
   margin-bottom: 10px;
 }
 
+.tabs .about a {
+  color: #d1e8e2;
+  text-decoration: none;
+  background-color: #222629;
+  padding: 3px;
+  font-size: 12px;
+}
+
+.tabs .about a:hover {
+  font-weight: 500;
+  font-size: 13px;
+}
+
 .tabs .experience {
   margin-bottom: 30px;
 }
@@ -107,14 +120,51 @@ nav h3 {
   width: 850px;
 }
 
-.tabs .carousel {
+.tabs .portifolio {
   width: 525px;
+  background-color: #222629;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
-.tabs .carousel img {
+.tabs .portifolio .links {
+  margin-bottom: 15px;
+}
+
+.tabs .portifolio .links a {
+  color: #d1e8e2;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.tabs .portifolio .links a:hover {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.tabs .portifolio img {
   border: 1px solid  #222629;
   border-radius: 5px;
+}
+
+.tabs .portifolio .next, .tabs .portifolio .prev {
+  background-color: #272727;
+  border-radius: 10px;
+}
+
+.tabs .portifolio .caption {
   opacity: 0.6;
+  position: static;
+  padding-bottom: 0px;
+}
+
+.tabs .portifolio .caption a {
+  color: #d1e8e2;
+  text-decoration: none;
+}
+
+.tabs .portifolio .caption a:hover {
+  color: #faed26;
 }
 
 .tabs .skills {
@@ -130,12 +180,13 @@ nav h3 {
 
 .tabs .skills #skill-barometer .progressbar {
   width: 400px;
+  height: 60px;
   margin-bottom: 20px;
 }
 
 .tabs .skills #skill-barometer .progressbar p {
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .tabs .skills #skill-barometer .progressbar div {
@@ -161,10 +212,5 @@ nav h3 {
 .tabs .contact .contact_links a:hover {
   font-weight: 800;
   font-size: 18px;
-}
-
-.all_infosection {
-  margin: 10px 40px 0px 60px;
-  line-height: 1.6;
 }
 /*# sourceMappingURL=style.css.map */

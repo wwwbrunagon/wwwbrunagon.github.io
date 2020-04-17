@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-//skills progressbar
+//skill-barometer
 function getRandomColor() {
-  let colors =['#f64c72', '#5cdb95', '#edf5e1', '#fc445', '#3feee6', '#97caef','#cafafe', '#8ee4af0', '#5cdb95', '#3500d3', '#950740', '#c3073f', '#e7717D','#c2cad0', '##c2b9b0', '#afd275', '#66fcf1', '#e3e2df','#e3afbc', '#ee4c7c','#d79922', '#ef2ba', '#f13c20', '#ff652f', '#ffe400', '#14a76c']
+  let colors = ["AliceBlue", "AntiqueWhite", "Aqua", "Aquamarine", "Azure", "Beige", "Bisque", "BlanchedAlmond", "Blue", "BlueViolet", "Brown", "BurlyWood", "CadetBlue", "Chartreuse", "Chocolate", "Coral", "CornflowerBlue", "Cornsilk", "Crimson", "Cyan", "DarkBlue", "DarkCyan", "DarkGoldenRod", "DarkGray", "DarkGrey", "DarkGreen", "DarkKhaki", "DarkMagenta", "DarkOliveGreen", "Darkorange", "DarkOrchid", "DarkRed", "DarkSalmon", "DarkSeaGreen", "DarkSlateBlue", "DarkSlateGray", "DarkSlateGrey", "DarkTurquoise", "DarkViolet", "DeepPink", "DeepSkyBlue", "DimGray", "DimGrey", "DodgerBlue", "FireBrick", "FloralWhite", "ForestGreen", "Fuchsia", "Gainsboro", "GhostWhite", "Gold", "GoldenRod", "Gray", "Grey", "Green", "GreenYellow", "HoneyDew", "HotPink", "IndianRed", "Indigo", "Ivory", "Khaki", "Lavender", "LavenderBlush", "LawnGreen", "LemonChiffon", "LightBlue", "LightCoral", "LightCyan", "LightGoldenRodYellow", "LightGray", "LightGrey", "LightGreen", "LightPink", "LightSalmon", "LightSeaGreen", "LightSkyBlue", "LightSlateGray", "LightSlateGrey", "LightSteelBlue", "LightYellow", "Lime", "LimeGreen", "Linen", "Magenta", "Maroon", "MediumAquaMarine", "MediumBlue", "MediumOrchid", "MediumPurple", "MediumSeaGreen", "MediumSlateBlue", "MediumSpringGreen", "MediumTurquoise", "MediumVioletRed", "MidnightBlue", "MintCream", "MistyRose", "Moccasin", "NavajoWhite", "Navy", "OldLace", "Olive", "OliveDrab", "Orange", "OrangeRed", "Orchid", "PaleGoldenRod", "PaleGreen", "PaleTurquoise", "PaleVioletRed", "PapayaWhip", "PeachPuff", "Peru", "Pink", "Plum", "PowderBlue", "Purple", "Red", "RosyBrown", "RoyalBlue", "SaddleBrown", "Salmon", "SandyBrown", "SeaGreen", "SeaShell", "Sienna", "Silver", "SkyBlue", "SlateBlue", "SlateGray", "SlateGrey", "Snow", "SpringGreen", "SteelBlue", "Tan", "Teal", "Thistle", "Tomato", "Turquoise", "Violet", "Wheat", "White", "WhiteSmoke", "Yellow", "YellowGreen"];
 
   let index = Math.floor(Math.random() * colors.length)
-  
+
   return colors[index]    
   }
   
@@ -50,12 +50,12 @@ function createProgressBar(percentage, containerDiv) {
 //particles
 let particles = Particles.init({
   selector: '.background',
-  color: ['#474b4f', '#404B69'],
+  color: ['#5a5560', '#404B69'],
   connectParticles: true,
   responsive: [{
     breakpoint: 800,
     options: {
-      color: '#00C9B1',
+      color: '#9d8d8f',
       maxParticles: 80,
       connectParticles: false
     }
