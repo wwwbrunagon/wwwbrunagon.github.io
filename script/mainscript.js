@@ -21,7 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //skills progressbar
 function getRandomColor() {
-    return '#' + Math.floor(Math.random() * 16777215).toString(16);
+  let colors =['#f64c72', '#5cdb95', '#edf5e1', '#fc445', '#3feee6', '#97caef','#cafafe', '#8ee4af0', '#5cdb95', '#3500d3', '#950740', '#c3073f', '#e7717D','#c2cad0', '##c2b9b0', '#afd275', '#66fcf1', '#e3e2df','#e3afbc', '#ee4c7c','#d79922', '#ef2ba', '#f13c20', '#ff652f', '#ffe400', '#14a76c']
+
+  let index = Math.floor(Math.random() * colors.length)
+  
+  return colors[index]    
   }
   
 function createProgressBar(percentage, containerDiv) {   
