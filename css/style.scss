@@ -1,22 +1,11 @@
-*{
+body{
+    background-color:#46344e;
+    color:#d1e8e2;     
     margin: 0;    
     padding: 0;
     font-family: 'Fira Code', monospace;
+    background-image: url('../img/bg/skulls.png')   
 }
-
-body{
-    background-color:#46344e;
-    color:#d1e8e2;
-}
-
-#particles-js{
-    // position: relative;
-    // display: block;
-    // top: 0;
-    // left: 0;
-    // background-position: 50% 50%;
-    z-index: -3;
-  }
 
 
 nav{
@@ -43,11 +32,11 @@ nav{
     
     .tab {
     cursor: pointer;
-    margin-bottom: 20px ;   
-    border-radius: 2px;
+    margin-bottom: 15px ;   
+    border-radius: 5px;
     display: inline-block;
     background-color: #faed26;
-    padding: 0.75rem;
+    padding: 5px 15px;
     color:#272727;
     &:hover{
         font-weight: 600;
@@ -67,7 +56,10 @@ nav{
 
     .about{        
         width: 700px;
-        padding: 10px;
+        padding: 15px;
+        background-color: #222629;
+     
+        border-radius: 5px;
 
         p{
             margin-bottom: 10px;
@@ -115,10 +107,11 @@ nav{
     }
 
     .portifolio{
-        width: 525px;
+        width: 555px;
         background-color: #222629; 
         padding: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        border-radius: 5px;
 
         .links{            
             margin-bottom: 15px;
@@ -165,16 +158,17 @@ nav{
         
         #skill-barometer { 
             padding: 20px;
-            width: 525px;
+            width: 555px;
             background-color: #222629;  
+            border-radius: 5px;
             
             .progressbar {
-                width: 400px;
+                width: 500px;
                 height: 60px;
-                margin-bottom: 20px;
+                margin-bottom: 25px;
                 p{
                     font-size: 12px;
-                    margin-bottom: 5px;
+                    margin-bottom: 10px;
                 }
                 
                 div {           
@@ -186,10 +180,12 @@ nav{
     }
 
     .contact{
-        width: 525px;
-        padding: 5px; 
+        width: 555px;
+        padding: 10px; 
         margin-top:5px;
-
+        background-color: #222629;
+        border-radius: 5px;
+        
         .contact_links{
             margin-bottom: 10px;
             a{
