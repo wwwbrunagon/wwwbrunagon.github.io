@@ -1,31 +1,30 @@
 body{
-    background-color:#46344e;
+    background-color:#272727;
     color:#d1e8e2;     
     margin: 0;    
     padding: 0;
     font-family: 'Fira Code', monospace;
-    background-image: url('../img/bg/skulls.png')   
+    background-image: url('../img/bg/xv.png')   
 }
 
 
 nav{
-    margin: 20px 0px 0px 60px;  
+    margin: 20px 0px 20px 60px;  
     text-decoration: none;
     
     h1{
-        font-family: 'Raleway', sans-serif;
-        font-weight: 300;
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-    h3{
-        font-family: 'Fira Code', monospace;
+        font-family: 'Oswald', sans-serif;
         font-weight: 200;
+
+    }
+
+    h2{       
+        font-weight: 500;
+        font-size: 18px;
     }
 }
 
 .tabs{        
-    font-family: 'Fira Code', monospace;
     font-weight: 200;
     margin-left: 60px;
     margin-top: 20px;
@@ -35,9 +34,10 @@ nav{
     margin-bottom: 15px ;   
     border-radius: 5px;
     display: inline-block;
-    background-color: #faed26;
-    padding: 5px 15px;
-    color:#272727;
+    background-color: #222629 ;
+    padding: 8px 15px;
+    color:#faed26;
+    font-weight: 500;
     &:hover{
         font-weight: 600;
     }
@@ -45,9 +45,10 @@ nav{
   }
   
   .selected {
-    background-color: #222629;
+    padding: 7px 15px;
+    background-color: #faed26;
     font-weight: 500;
-    color: #a39996;    
+    color: #222629;    
     }   
 
   .hidden { 
@@ -56,10 +57,7 @@ nav{
 
     .about{        
         width: 700px;
-        padding: 15px;
-        background-color: #222629;
-     
-        border-radius: 5px;
+        padding: 3px;
 
         p{
             margin-bottom: 10px;
@@ -86,7 +84,7 @@ nav{
             background-color:#222629;
             padding: 10px;
             border-radius: 5px;
-            width: 850px;
+            width: 800px;
             margin-top:5px;
             margin-bottom: 10px;
             .ano{
@@ -107,10 +105,7 @@ nav{
     }
 
     .portifolio{
-        width: 555px;
-        background-color: #222629; 
-        padding: 20px;
-        margin-bottom: 30px;
+        width: 555px;   
         border-radius: 5px;
 
         .links{            
@@ -136,10 +131,10 @@ nav{
             border-radius: 10px;           
         }
         
-        .caption{
-            opacity: 0.6;
+        .caption{            
             position: static;  
-            padding-bottom: 0px;            
+            padding-bottom: 0px;  
+            margin-bottom: 0px;          
             a{
                 color:#d1e8e2;
                 text-decoration: none;
@@ -155,17 +150,18 @@ nav{
     .skills{
         margin-top: 10px; 
         margin-bottom: 30px;
+        padding: 5px;
         
         #skill-barometer { 
-            padding: 20px;
             width: 555px;
-            background-color: #222629;  
+            // background-color: #222629;  
             border-radius: 5px;
             
             .progressbar {
-                width: 500px;
+                width: 400px;
                 height: 60px;
                 margin-bottom: 25px;
+                font-weight: 500;
                 p{
                     font-size: 12px;
                     margin-bottom: 10px;
@@ -183,9 +179,9 @@ nav{
         width: 555px;
         padding: 10px; 
         margin-top:5px;
-        background-color: #222629;
+        // background-color: #222629;
         border-radius: 5px;
-        
+
         .contact_links{
             margin-bottom: 10px;
             a{
