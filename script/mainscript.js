@@ -47,3 +47,7 @@ function createProgressBar(percentage, containerDiv) {
   }
 
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+

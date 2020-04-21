@@ -4,14 +4,13 @@ body{
     margin: 0;    
     padding: 0;
     font-family: 'Fira Code', monospace;
-    background-image: url('../img/bg/xv.png')   
+    background-image: url('../img/bg/xv.png');  
+    
 }
 
-
 nav{
-    margin: 20px 0px 20px 60px;  
-    text-decoration: none;
-    
+    margin: 30px 0px 20px 60px;  
+  
     h1{
         font-family: 'Oswald', sans-serif;
         font-weight: 200;
@@ -21,13 +20,46 @@ nav{
     h2{       
         font-weight: 500;
         font-size: 18px;
+        margin-top: 20px;
+
+        .blinking{
+            animation:blinkingText 1.2s infinite;
+            font-weight: bolder;
+        }
+        @keyframes blinkingText{
+            0%{		color:#d1e8e2;	}           
+            50%{	color: transparent;	}
+            99%{	color:transparent;	}
+            100%{	color:#d1e8e2;	}
+        }
+    }
+    img{
+        height:15px;
+        margin-right: 10px;
+    }
+    
+    i{
+        color:#d1e8e2;
+        padding-right: 12px;
+        &:hover{
+            font-size: large;
+            color: #faed26;
+        }
+    }
+    
+    .email{
+        i{
+            margin-right: 0px;
+        }
     }
 }
+
+
 
 .tabs{        
     font-weight: 200;
     margin-left: 60px;
-    margin-top: 20px;
+    margin-top: -15px;
     
     .tab {
     cursor: pointer;
