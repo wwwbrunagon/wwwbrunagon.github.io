@@ -17,7 +17,29 @@ document.addEventListener('DOMContentLoaded', () => {
   bindTabs();
 });
 
+//about langs
+document.getElementById("brflag-about").onclick = function() {   
+  document.getElementById("portuguese-about").style.display = "block"; 
+  document.getElementById("english-about").style.display = "none"; 
+  console.log('ptbr')
+}
 
+document.getElementById("usaflag-about").onclick = function() {   
+  document.getElementById("portuguese-about").style.display = "none"; 
+  document.getElementById("english-about").style.display = "block"; 
+  console.log('eng')
+}
+
+//xp langs
+document.getElementById("brflag").onclick = function() {   
+  document.getElementById("portuguese-xp").style.display = "block"; 
+  document.getElementById("english-xp").style.display = "none"; 
+}
+
+document.getElementById("usaflag").onclick = function() {   
+  document.getElementById("portuguese-xp").style.display = "none"; 
+  document.getElementById("english-xp").style.display = "block"; 
+}
 
 //skill-barometer
 function getRandomColor() {
@@ -46,8 +68,9 @@ function createProgressBar(percentage, containerDiv) {
     createProgressBar(percentage, div)
   }
 
-
+  //tootltip 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
+
 

@@ -58,11 +58,6 @@ nav h2 .blinking {
   }
 }
 
-nav img {
-  height: 15px;
-  margin-right: 10px;
-}
-
 nav i {
   color: #d1e8e2;
   padding-right: 12px;
@@ -75,6 +70,21 @@ nav i:hover {
 
 nav .email i {
   margin-right: 0px;
+}
+
+.flag img {
+  height: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#english-xp {
+  display: none;
+}
+
+#english-about {
+  display: none;
 }
 
 .tabs {
@@ -118,7 +128,7 @@ nav .email i {
   margin-bottom: 10px;
 }
 
-.tabs .about a {
+.tabs .about .mediumlink {
   color: #d1e8e2;
   text-decoration: none;
   background-color: #222629;
@@ -126,7 +136,7 @@ nav .email i {
   font-size: 12px;
 }
 
-.tabs .about a:hover {
+.tabs .about .mediumlink:hover {
   font-weight: 500;
   font-size: 13px;
 }

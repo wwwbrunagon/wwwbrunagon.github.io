@@ -33,10 +33,6 @@ nav{
             100%{	color:#d1e8e2;	}
         }
     }
-    img{
-        height:15px;
-        margin-right: 10px;
-    }
     
     i{
         color:#d1e8e2;
@@ -53,6 +49,25 @@ nav{
         }
     }
 }
+
+
+.flag{
+     img{        
+        height:15px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;       
+    }
+}
+
+#english-xp{
+    display: none;
+}
+
+#english-about{
+    display: none;
+}
+
 
 
 .tabs{        
@@ -94,7 +109,7 @@ nav{
             margin-bottom: 10px;
         }
 
-        a{
+        .mediumlink{
             color:#d1e8e2;
             text-decoration: none;
             background-color: #222629;
