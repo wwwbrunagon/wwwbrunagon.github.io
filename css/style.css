@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: 'Fira Code', monospace;
   background-image: url("../img/bg/xv.png");
+  height: 100%;
 }
 
 nav {
@@ -122,6 +123,25 @@ nav .email i {
 .tabs .about {
   width: 700px;
   padding: 3px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .tabs .about {
+    width: 600px;
+  }
+}
+
+@media (max-width: 674px) {
+  .tabs .about {
+    width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tabs .about {
+    width: 380px;
+  }
 }
 
 .tabs .about p {
