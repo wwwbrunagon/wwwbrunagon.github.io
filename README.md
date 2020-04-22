@@ -1,3 +1,2 @@
-Me = ['Front-end engineer', 'Design systems enthusiast', 'Linux Lover'] 
+Me = ['Front-end deeva', 'Design systems enthusiast', 'Linux Lover'] 
 
->> https://wwwbrunagon.github.io/
