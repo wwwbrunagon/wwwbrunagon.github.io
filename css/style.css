@@ -251,7 +251,7 @@ nav .email i {
 
 @media (max-width: 380px) {
   .tabs .experience .title {
-    width: 290px;
+    width: 310px;
   }
 }
 
@@ -325,6 +325,12 @@ nav .email i {
 @media (max-width: 576px) {
   .tabs .portifolio {
     width: 350px;
+  }
+}
+
+@media (max-width: 380px) {
+  .tabs .portifolio {
+    width: 300px;
   }
 }
 

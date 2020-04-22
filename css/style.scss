@@ -232,7 +232,7 @@ nav{
                 width: 340px;                
             }
             @include rwd(380){
-                width: 290px;
+                width: 310px;
             }
             
             
@@ -297,6 +297,10 @@ nav{
         }
         @include sm{
             width: 350px;                    
+        }
+        
+        @include rwd(380) {
+            width: 300px;
         }
 
         .links{            
