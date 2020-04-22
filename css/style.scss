@@ -57,8 +57,7 @@ body{
     background-image: url('../img/bg/xv.png'); 
     height: 100%; 
     overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;        
+    word-wrap: break-word;       
 }
 
 nav{
@@ -298,7 +297,7 @@ nav{
         @include sm{
             width: 350px;                    
         }
-        
+
         @include rwd(380) {
             width: 300px;
         }
