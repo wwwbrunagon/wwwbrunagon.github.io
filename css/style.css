@@ -19,7 +19,7 @@ nav {
 
 @media (max-width: 576px) {
   nav {
-    margin: 20px 0px 0px 20px;
+    margin: 20px 0px 0px 16px;
   }
 }
 
@@ -80,6 +80,12 @@ nav i:hover {
   color: #faed26;
 }
 
+@media (max-width: 576px) {
+  nav i {
+    font-size: 19px;
+  }
+}
+
 nav .email i {
   margin-right: 0px;
 }
@@ -89,6 +95,12 @@ nav .email i {
   margin-right: 10px;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .flag img {
+    height: 20px;
+  }
 }
 
 #english-xp, #english-about {
@@ -103,8 +115,8 @@ nav .email i {
 
 @media (max-width: 576px) {
   .tabs {
-    margin: 20px 0px 0px 20px;
-    width: 300px;
+    margin: 10px 0px 0px 15px;
+    width: 200px;
   }
 }
 
@@ -125,8 +137,8 @@ nav .email i {
 
 @media (max-width: 576px) {
   .tabs .tab {
-    font-size: 12px;
-    padding: 2px 5px;
+    font-size: 15px;
+    padding: 5px 5px;
     font-weight: 500;
   }
 }
@@ -140,9 +152,9 @@ nav .email i {
 
 @media (max-width: 576px) {
   .tabs .selected {
-    font-size: 12px;
-    padding: 2px 5px;
-    font-weight: 400;
+    font-size: 16px;
+    padding: 6px 5px;
+    font-weight: 500;
   }
 }
 
@@ -225,15 +237,21 @@ nav .email i {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .tabs .experience .title {
-    width: 450px;
+    width: 400px;
   }
 }
 
 @media (max-width: 576px) {
   .tabs .experience .title {
-    width: 400px;
+    width: 340px;
+  }
+}
+
+@media (max-width: 380px) {
+  .tabs .experience .title {
+    width: 290px;
   }
 }
 

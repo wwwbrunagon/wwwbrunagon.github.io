@@ -64,14 +64,13 @@ body{
 nav{
     margin: 30px 0px 20px 60px;  
     @include sm{
-        margin: 20px 0px 0px 20px;  
+        margin: 20px 0px 0px 16px;  
     }
 
   
     h1{
         font-family: 'Oswald', sans-serif;
         font-weight: 200;
-
     }
 
     h2{       
@@ -98,6 +97,9 @@ nav{
             font-size: large;
             color: #faed26;
         }
+        @include sm{
+            font-size: 19px;
+        }
     }
     
     .email{
@@ -113,7 +115,10 @@ nav{
         height:15px;
         margin-right: 10px;
         margin-bottom: 10px;
-        cursor: pointer;       
+        cursor: pointer;  
+        @include sm{
+            height: 20px;
+        }     
     }
 }
 
@@ -127,8 +132,8 @@ nav{
     margin-left: 60px;
     margin-top: -15px;
     @include sm{
-        margin: 20px 0px 0px 20px;  
-        width: 300px;      
+        margin: 10px 0px 0px 15px;   
+        width: 200px; 
     }    
     
     .tab {
@@ -145,10 +150,9 @@ nav{
         }
 
         @include sm{
-            font-size: 12px;
-            padding: 2px 5px;  
-            font-weight: 500; 
-                
+            font-size: 15px;
+            padding: 5px 5px;  
+            font-weight: 500;                 
         }
     }
   
@@ -158,9 +162,9 @@ nav{
         font-weight: 500;
         color: #222629;    
         @include sm{
-            font-size: 12px;
-            padding: 2px 5px;  
-            font-weight: 400; 
+            font-size: 16px;
+            padding: 6px 5px;  
+            font-weight: 500; 
         }
     }   
 
@@ -221,12 +225,14 @@ nav{
             @include md{
                 width: 550px;
             }
-            @include rwd(600){
-                width: 450px;
+            @include rwd(500){
+                width: 400px;
             }
             @include sm{
-                width: 400px;
-                
+                width: 340px;                
+            }
+            @include rwd(380){
+                width: 290px;
             }
             
             
