@@ -6,6 +6,11 @@ body {
   font-family: 'Fira Code', monospace;
   background-image: url("../img/bg/xv.png");
   height: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 nav {
@@ -14,7 +19,7 @@ nav {
 
 @media (max-width: 576px) {
   nav {
-    margin: 0;
+    margin: 20px 0px 0px 20px;
   }
 }
 
@@ -86,11 +91,7 @@ nav .email i {
   cursor: pointer;
 }
 
-#english-xp {
-  display: none;
-}
-
-#english-about {
+#english-xp, #english-about {
   display: none;
 }
 
@@ -102,7 +103,8 @@ nav .email i {
 
 @media (max-width: 576px) {
   .tabs {
-    margin: 0;
+    margin: 20px 0px 0px 20px;
+    width: 300px;
   }
 }
 
@@ -121,11 +123,27 @@ nav .email i {
   font-weight: 600;
 }
 
+@media (max-width: 576px) {
+  .tabs .tab {
+    font-size: 12px;
+    padding: 2px 5px;
+    font-weight: 500;
+  }
+}
+
 .tabs .selected {
   padding: 7px 15px;
   background-color: #faed26;
   font-weight: 500;
   color: #222629;
+}
+
+@media (max-width: 576px) {
+  .tabs .selected {
+    font-size: 12px;
+    padding: 2px 5px;
+    font-weight: 400;
+  }
 }
 
 .tabs .hidden {
@@ -153,6 +171,12 @@ nav .email i {
 @media (max-width: 576px) {
   .tabs .about {
     width: 380px;
+  }
+}
+
+@media (max-width: 380px) {
+  .tabs .about {
+    width: 300px;
   }
 }
 
@@ -184,9 +208,33 @@ nav .email i {
   background-color: #222629;
   padding: 10px;
   border-radius: 5px;
-  width: 800px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  width: 800px;
+}
+
+@media (max-width: 992px) {
+  .tabs .experience .title {
+    width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs .experience .title {
+    width: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabs .experience .title {
+    width: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tabs .experience .title {
+    width: 400px;
+  }
 }
 
 .tabs .experience .title .ano {
@@ -203,12 +251,63 @@ nav .email i {
 .tabs .experience .title .list {
   margin-top: 10px;
   font-size: 14px;
-  width: 850px;
+}
+
+.tabs .skills {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+.tabs .skills #skill-barometer {
+  width: 555px;
+  border-radius: 5px;
+}
+
+.tabs .skills #skill-barometer .progressbar {
+  width: 400px;
+  height: 60px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+@media (max-width: 630px) {
+  .tabs .skills #skill-barometer .progressbar {
+    width: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tabs .skills #skill-barometer .progressbar {
+    width: 300px;
+  }
+}
+
+.tabs .skills #skill-barometer .progressbar p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.tabs .skills #skill-barometer .progressbar div {
+  height: 10px;
+  width: 0;
 }
 
 .tabs .portifolio {
   width: 555px;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .tabs .portifolio {
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tabs .portifolio {
+    width: 350px;
+  }
 }
 
 .tabs .portifolio .links {
@@ -249,34 +348,6 @@ nav .email i {
 
 .tabs .portifolio .caption a:hover {
   color: #faed26;
-}
-
-.tabs .skills {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding: 5px;
-}
-
-.tabs .skills #skill-barometer {
-  width: 555px;
-  border-radius: 5px;
-}
-
-.tabs .skills #skill-barometer .progressbar {
-  width: 400px;
-  height: 60px;
-  margin-bottom: 25px;
-  font-weight: 500;
-}
-
-.tabs .skills #skill-barometer .progressbar p {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-.tabs .skills #skill-barometer .progressbar div {
-  height: 10px;
-  width: 0;
 }
 
 .tabs .contact {

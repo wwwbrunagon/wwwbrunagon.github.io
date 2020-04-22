@@ -56,13 +56,15 @@ body{
     font-family: 'Fira Code', monospace;
     background-image: url('../img/bg/xv.png'); 
     height: 100%; 
-        
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;        
 }
 
 nav{
     margin: 30px 0px 20px 60px;  
     @include sm{
-        margin: 0;
+        margin: 20px 0px 0px 20px;  
     }
 
   
@@ -115,48 +117,55 @@ nav{
     }
 }
 
-#english-xp{
-    display: none;
-}
-
-#english-about{
+#english-xp, #english-about{
     display: none;
 }
 
 
-
-.tabs{    
-    @include sm{
-        margin: 0;
-    }    
+.tabs{        
     font-weight: 200;
     margin-left: 60px;
     margin-top: -15px;
+    @include sm{
+        margin: 20px 0px 0px 20px;  
+        width: 300px;      
+    }    
     
     .tab {
-    cursor: pointer;
-    margin-bottom: 15px ;   
-    border-radius: 5px;
-    display: inline-block;
-    background-color: #222629 ;
-    padding: 8px 15px;
-    color:#faed26;
-    font-weight: 500;
-    &:hover{
-        font-weight: 600;
-    }
+        cursor: pointer;
+        margin-bottom: 15px ;   
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #222629 ;
+        padding: 8px 15px;
+        color:#faed26;
+        font-weight: 500;
+        &:hover{
+            font-weight: 600;
+        }
 
-  }
+        @include sm{
+            font-size: 12px;
+            padding: 2px 5px;  
+            font-weight: 500; 
+                
+        }
+    }
   
   .selected {
-    padding: 7px 15px;
-    background-color: #faed26;
-    font-weight: 500;
-    color: #222629;    
+        padding: 7px 15px;
+        background-color: #faed26;
+        font-weight: 500;
+        color: #222629;    
+        @include sm{
+            font-size: 12px;
+            padding: 2px 5px;  
+            font-weight: 400; 
+        }
     }   
 
   .hidden { 
-    display:none;
+        display:none;
     }
 
     .about{        
@@ -165,13 +174,16 @@ nav{
         height: 100%;
 
         @include md {
-            width: 600px
+            width: 600px;
         }
         @include rwd(674) {
-            width: 500px
+            width: 500px;
         }
         @include sm {
-            width: 380px
+            width: 380px;
+        }
+        @include rwd(380) {
+            width: 300px;
         }
 
         p{
@@ -188,34 +200,84 @@ nav{
                 font-weight: 500;
                 font-size: 13px;
             }            
-        }
-
-        
+        }        
     }
 
     .experience{   
-        margin-bottom: 30px;      
+        margin-bottom: 30px;  
+        
         .title{
             display: flex;            
             background-color:#222629;
             padding: 10px;
             border-radius: 5px;
-            width: 800px;
             margin-top:5px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            width: 800px;
+
+            @include lg{
+                width: 700px;
+            }
+            @include md{
+                width: 550px;
+            }
+            @include rwd(600){
+                width: 450px;
+            }
+            @include sm{
+                width: 400px;
+                
+            }
+            
+            
             .ano{
                 margin-top: 5px;
                 margin-right: 20px;
                 font-size: 12px;
                 font-weight: 600;
             }
+
             .job_role{
                 font-weight: 500;
             }
+
             .list{
                 margin-top: 10px;
-                font-size: 14px;
-                width: 850px;
+                font-size: 14px;       
+            }
+        }
+    }
+    .skills{
+        margin-top: 10px; 
+        margin-bottom: 30px;
+        padding: 5px;
+        
+        #skill-barometer { 
+            width: 555px;
+            border-radius: 5px;
+            
+            .progressbar {
+                width: 400px;
+                height: 60px;
+                margin-bottom: 25px;
+                font-weight: 500;
+
+                @include rwd(630){
+                    width: 350px;
+                }
+                @include sm{
+                    width: 300px;                    
+                }
+                
+                p{
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+                
+                div {           
+                height: 10px;
+                width: 0;
+                }
             }
         }
     }
@@ -223,6 +285,13 @@ nav{
     .portifolio{
         width: 555px;   
         border-radius: 5px;
+
+        @include md{
+            width: 400px;                    
+        }
+        @include sm{
+            width: 350px;                    
+        }
 
         .links{            
             margin-bottom: 15px;
@@ -253,8 +322,7 @@ nav{
             margin-bottom: 0px;          
             a{
                 color:#d1e8e2;
-                text-decoration: none;
-              
+                text-decoration: none;              
                 &:hover{
                     color:#faed26;
                 }
@@ -263,39 +331,12 @@ nav{
 
     }
 
-    .skills{
-        margin-top: 10px; 
-        margin-bottom: 30px;
-        padding: 5px;
-        
-        #skill-barometer { 
-            width: 555px;
-            // background-color: #222629;  
-            border-radius: 5px;
-            
-            .progressbar {
-                width: 400px;
-                height: 60px;
-                margin-bottom: 25px;
-                font-weight: 500;
-                p{
-                    font-size: 12px;
-                    margin-bottom: 10px;
-                }
-                
-                div {           
-                height: 10px;
-                width: 0;
-                }
-            }
-        }
-    }
+  
 
     .contact{
         width: 555px;
         padding: 10px; 
         margin-top:5px;
-        // background-color: #222629;
         border-radius: 5px;
 
         .contact_links{
