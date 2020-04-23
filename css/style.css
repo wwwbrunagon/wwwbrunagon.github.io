@@ -308,66 +308,66 @@ nav .email i {
   width: 0;
 }
 
-.tabs .portifolio {
+.tabs .portfolio {
   width: 555px;
   border-radius: 5px;
 }
 
 @media (max-width: 768px) {
-  .tabs .portifolio {
+  .tabs .portfolio {
     width: 400px;
   }
 }
 
 @media (max-width: 576px) {
-  .tabs .portifolio {
+  .tabs .portfolio {
     width: 350px;
   }
 }
 
 @media (max-width: 380px) {
-  .tabs .portifolio {
+  .tabs .portfolio {
     width: 300px;
   }
 }
 
-.tabs .portifolio .links {
+.tabs .portfolio .links {
   margin-bottom: 15px;
 }
 
-.tabs .portifolio .links a {
+.tabs .portfolio .links a {
   color: #d1e8e2;
   text-decoration: none;
   font-size: 15px;
 }
 
-.tabs .portifolio .links a:hover {
+.tabs .portfolio .links a:hover {
   font-weight: 500;
   font-size: 16px;
 }
 
-.tabs .portifolio img {
+.tabs .portfolio img {
   border: 1px solid  #222629;
   border-radius: 5px;
 }
 
-.tabs .portifolio .next, .tabs .portifolio .prev {
+.tabs .portfolio .next, .tabs .portfolio .prev {
   background-color: #272727;
   border-radius: 10px;
 }
 
-.tabs .portifolio .caption {
+.tabs .portfolio .caption {
   position: static;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
 
-.tabs .portifolio .caption a {
+.tabs .portfolio .caption a {
   color: #d1e8e2;
   text-decoration: none;
 }
 
-.tabs .portifolio .caption a:hover {
+.tabs .portfolio .caption a:hover {
   color: #faed26;
 }
 
