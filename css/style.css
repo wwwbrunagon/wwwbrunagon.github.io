@@ -338,7 +338,8 @@ nav .email i {
 .tabs .portfolio .links a {
   color: #d1e8e2;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .tabs .portfolio .links a:hover {
