@@ -279,6 +279,12 @@ nav .email i {
   border-radius: 5px;
 }
 
+@media (max-width: 576px) {
+  .tabs .skills #skill-barometer {
+    width: 350px;
+  }
+}
+
 .tabs .skills #skill-barometer .progressbar {
   width: 400px;
   height: 60px;
@@ -332,19 +338,25 @@ nav .email i {
 }
 
 .tabs .portfolio .links {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .tabs .portfolio .links a {
+  margin-bottom: 20px;
   color: #d1e8e2;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 .tabs .portfolio .links a:hover {
   font-weight: 500;
-  font-size: 16px;
+  font-size: larger;
+  color: #faed26;
+}
+
+.tabs .portfolio .links i {
+  margin-bottom: 15px;
 }
 
 .tabs .portfolio img {

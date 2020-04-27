@@ -82,10 +82,10 @@ nav{
             font-weight: bolder;
         }
         @keyframes blinkingText{
-            0%{		color:#d1e8e2;	}           
-            50%{	color: transparent;	}
-            99%{	color:transparent;	}
-            100%{	color:#d1e8e2;	}
+            0%{color:#d1e8e2;}           
+            50%{color: transparent;}
+            99%{color:transparent;}
+            100%{color:#d1e8e2;}
         }
     }
     
@@ -260,6 +260,9 @@ nav{
         #skill-barometer { 
             width: 555px;
             border-radius: 5px;
+            @include sm{
+                width: 350px;                    
+            }
             
             .progressbar {
                 width: 400px;
@@ -302,17 +305,22 @@ nav{
             width: 300px;
         }
 
-        .links{            
-            margin-bottom: 15px;
+        .links{                        
+            margin-bottom: 20px;
             a{
+                margin-bottom: 20px;
                 color:#d1e8e2;
                 text-decoration: none; 
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: 500;
                 &:hover{
                     font-weight: 500;
-                    font-size: 16px;
-                }            
+                    font-size:larger;
+                    color:#faed26;
+                }           
+            }
+            i{
+                margin-bottom: 15px;
             }
         }
 
