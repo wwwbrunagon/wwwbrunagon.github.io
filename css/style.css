@@ -274,6 +274,40 @@ nav .email i {
   padding: 5px;
 }
 
+.tabs .skills .overview {
+  margin-bottom: 2em;
+  width: 350px;
+}
+
+.tabs .skills .overview:hover {
+  font-size: large;
+}
+
+.tabs .skills .overview a {
+  font-family: 'Fira Code', monospace;
+  text-decoration: none;
+}
+
+.tabs .skills .overview a i {
+  color: #d1e8e2;
+  font-size: 1.2em;
+  padding-right: 12px;
+}
+
+.tabs .skills .overview a i:hover {
+  color: #faed26;
+}
+
+.tabs .skills .overview a p {
+  font-size: 1em;
+  color: #d1e8e2;
+  font-weight: 500;
+}
+
+.tabs .skills .overview a p:hover {
+  color: #faed26;
+}
+
 .tabs .skills #skill-barometer {
   width: 555px;
   border-radius: 5px;

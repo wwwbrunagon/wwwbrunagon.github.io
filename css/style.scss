@@ -256,6 +256,39 @@ nav{
         margin-top: 10px; 
         margin-bottom: 30px;
         padding: 5px;
+
+        .overview{
+            margin-bottom: 2em;          
+            width: 350px;
+            &:hover{
+                font-size: large;                
+            } 
+            a{                
+                font-family: 'Fira Code', monospace;
+                text-decoration: none;
+              
+                i{
+                    color:#d1e8e2;
+                    font-size: 1.2em;
+                    padding-right: 12px;
+                    &:hover{                        
+                        color: #faed26;
+                    }               
+               }
+
+                p{
+                    font-size: 1em;                     
+                     color:#d1e8e2;
+                     font-weight: 500;
+                     &:hover{                        
+                        color: #faed26;      
+                     }                    
+                }
+            }
+
+        }
+
+
         
         #skill-barometer { 
             width: 555px;
