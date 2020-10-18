@@ -48,7 +48,7 @@ $screen-xl-max: 1200px;
 }
 
 body {
-  background-color: #272727;
+  background-color: #f23827;
   color: #d1e8e2;
   margin: 0;
   padding: 0;
@@ -133,8 +133,9 @@ nav {
 
 .introbg {
   p {
-    background-color: #222629;
+    background-color: #23d9b7;
     width: fit-content;
+    color: #222629;
   }
 }
 
@@ -223,7 +224,7 @@ nav {
 
     .title {
       display: flex;
-      background-color: #222629;
+      background-color: #050259;
       padding: 10px;
       border-radius: 5px;
       margin-top: 5px;
@@ -263,6 +264,7 @@ nav {
       }
     }
   }
+
   .skills {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -332,79 +334,54 @@ nav {
   }
 
   .portfolio {
-    width: 555px;
+    max-width: 960px;
     border-radius: 5px;
 
-    @include md {
-      width: 400px;
-    }
-    @include sm {
-      width: 350px;
-    }
+    .projetos {
+      text-align: center;
 
-    @include rwd(380) {
-      width: 300px;
-    }
+      .projeto {
+        display: flex;
+        flex-wrap: wrap;
 
-    .links {
-      margin-bottom: 20px;
-      a {
-        margin-bottom: 20px;
-        color: #d1e8e2;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 500;
-        &:hover {
-          font-weight: 500;
-          font-size: larger;
-          color: #faed26;
-        }
-      }
-      i {
-        margin-bottom: 15px;
-      }
-    }
+        .projeto__link {
+          margin-right: 20px;
+          background-color: #050259;
+          padding: 2rem;
+          color: white;
+          margin-top: 3rem;
 
-    img {
-      border: 1px solid #222629;
-      border-radius: 5px;
-    }
+          .projeto__img {
+            margin-bottom: 1rem;
+          }
 
-    .next,
-    .prev {
-      background-color: #272727;
-      border-radius: 10px;
-    }
-
-    .caption {
-      position: static;
-      padding-bottom: 0px;
-      margin-bottom: 0px;
-      a {
-        color: #d1e8e2;
-        text-decoration: none;
-        &:hover {
-          color: #faed26;
+          .projeto__titulo {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+          }
         }
       }
     }
   }
 
-  .contact {
-    width: 555px;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
 
-    .contact_links {
-      margin-bottom: 10px;
-      a {
-        color: #d1e8e2;
-        text-decoration: none;
-        &:hover {
-          font-weight: 800;
-          font-size: 18px;
-        }
+
+
+
+.contact {
+  width: 555px;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+
+  .contact_links {
+    margin-bottom: 10px;
+    a {
+      color: #d1e8e2;
+      text-decoration: none;
+      &:hover {
+        font-weight: 800;
+        font-size: 18px;
       }
     }
   }
