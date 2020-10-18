@@ -1,5 +1,5 @@
 body {
-  background-color: #f23827;
+  background-color: #F25116;
   color: #d1e8e2;
   margin: 0;
   padding: 0;
@@ -389,54 +389,6 @@ nav .email i {
 .tabs .portfolio .projetos .projeto .projeto__link .projeto__titulo {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-}
-
-.tabs .links {
-  margin-bottom: 20px;
-}
-
-.tabs .links a {
-  margin-bottom: 20px;
-  color: #d1e8e2;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.tabs .links a:hover {
-  font-weight: 500;
-  font-size: larger;
-  color: #faed26;
-}
-
-.tabs .links i {
-  margin-bottom: 15px;
-}
-
-.tabs img {
-  border: 1px solid #222629;
-  border-radius: 5px;
-}
-
-.tabs .next,
-.tabs .prev {
-  background-color: #272727;
-  border-radius: 10px;
-}
-
-.tabs .caption {
-  position: static;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-}
-
-.tabs .caption a {
-  color: #d1e8e2;
-  text-decoration: none;
-}
-
-.tabs .caption a:hover {
-  color: #faed26;
 }
 
 .contact {
