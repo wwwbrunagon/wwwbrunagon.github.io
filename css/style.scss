@@ -48,7 +48,7 @@ $screen-xl-max: 1200px;
 }
 
 body {
-  background-color: #F25116;
+  background-color: #f25116;
   color: #d1e8e2;
   margin: 0;
   padding: 0;
@@ -57,6 +57,10 @@ body {
   height: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
+
+  @include sm {
+    background-color:  #923310;
+  }
 }
 
 nav {
