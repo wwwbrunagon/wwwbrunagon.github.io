@@ -3,8 +3,8 @@ body {
   color: #d1e8e2;
   margin: 0;
   padding: 0;
-  font-family: 'Fira Code', monospace;
-  background-image: url("../img/bg/bright-squares.png");
+  font-family: "Fira Code", monospace;
+  background-image: url("../img/bg/foggy-birds.png");
   height: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -21,7 +21,7 @@ nav {
 }
 
 nav h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 200;
 }
 
@@ -100,8 +100,16 @@ nav .email i {
   }
 }
 
-#english-xp, #english-about {
+#english-xp,
+#english-about {
   display: none;
+}
+
+.introbg p {
+  background-color: #222629;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .tabs {
@@ -284,7 +292,7 @@ nav .email i {
 }
 
 .tabs .skills .skills-overview a {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   text-decoration: none;
 }
 
@@ -394,11 +402,12 @@ nav .email i {
 }
 
 .tabs .portfolio img {
-  border: 1px solid  #222629;
+  border: 1px solid #222629;
   border-radius: 5px;
 }
 
-.tabs .portfolio .next, .tabs .portfolio .prev {
+.tabs .portfolio .next,
+.tabs .portfolio .prev {
   background-color: #272727;
   border-radius: 10px;
 }

@@ -14,396 +14,398 @@ $screen-xl-max: 1200px;
 
 // Small devices
 @mixin sm {
-    @media (max-width: #{$screen-sm-max}) {
-        @content;
-    }
- }
- 
- // Medium devices
- @mixin md {
-    @media (max-width: #{$screen-md-max}) {
-        @content;
-    }
- }
- 
- // Large devices
- @mixin lg {
-    @media (max-width: #{$screen-lg-max}) {
-        @content;
-    }
- }
- 
- // Extra large devices
- @mixin xl {
-    @media (max-width: #{$screen-xl-max}) {
-        @content;
-    }
- }
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
 
- // Custom devices
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+// Custom devices
 @mixin rwd($screen) {
-    @media (max-width: $screen+'px') {
-        @content;
-    }
- }
-
-
-body{
-    background-color:#272727;
-    color:#d1e8e2;     
-    margin: 0;    
-    padding: 0;
-    font-family: 'Fira Code', monospace;
-    background-image: url('../img/bg/bright-squares.png'); 
-    height: 100%; 
-    overflow-wrap: break-word;
-    word-wrap: break-word;       
+  @media (max-width: $screen+"px") {
+    @content;
+  }
 }
 
-nav{
-    margin: 30px 0px 20px 60px;  
-    @include sm{
-        margin: 20px 0px 0px 16px;  
-    }
-
-  
-    h1{
-        font-family: 'Oswald', sans-serif;
-        font-weight: 200;
-    }
-
-    h2{       
-        font-weight: 500;
-        font-size: 18px;
-        margin-top: 20px;
-
-        .blinking{
-            animation:blinkingText 1.2s infinite;
-            font-weight: bolder;
-        }
-        @keyframes blinkingText{
-            0%{color:#d1e8e2;}           
-            50%{color: transparent;}
-            99%{color:transparent;}
-            100%{color:#d1e8e2;}
-        }
-    }
-    
-    i{
-        color:#d1e8e2;
-        padding-right: 12px;
-        &:hover{
-            font-size: large;
-            color: #faed26;
-        }
-        @include sm{
-            font-size: 19px;
-        }
-    }
-    
-    .email{
-        i{
-            margin-right: 0px;
-        }
-    }
+body {
+  background-color: #272727;
+  color: #d1e8e2;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", monospace;
+  background-image: url("../img/bg/foggy-birds.png");
+  height: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
+nav {
+  margin: 30px 0px 20px 60px;
+  @include sm {
+    margin: 20px 0px 0px 16px;
+  }
 
-.flag{
-     img{        
-        height:15px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        cursor: pointer;  
-        @include sm{
-            height: 20px;
-        }     
-    }
-}
-
-#english-xp, #english-about{
-    display: none;
-}
-
-
-.tabs{        
+  h1 {
+    font-family: "Oswald", sans-serif;
     font-weight: 200;
-    margin-left: 60px;
-    margin-top: -15px;
-    @include sm{
-        margin: 10px 0px 0px 15px;   
-        width: 200px; 
-    }    
-    
-    .tab {
-        cursor: pointer;
-        margin-bottom: 15px ;   
-        border-radius: 5px;
-        display: inline-block;
-        background-color: #222629 ;
-        padding: 8px 15px;
-        color:#faed26;
-        font-weight: 500;
-        &:hover{
-            font-weight: 600;
-        }
+  }
 
-        @include sm{
-            font-size: 15px;
-            padding: 5px 5px;  
-            font-weight: 500;                 
-        }
+  h2 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+
+    .blinking {
+      animation: blinkingText 1.2s infinite;
+      font-weight: bolder;
     }
-  
+    @keyframes blinkingText {
+      0% {
+        color: #d1e8e2;
+      }
+      50% {
+        color: transparent;
+      }
+      99% {
+        color: transparent;
+      }
+      100% {
+        color: #d1e8e2;
+      }
+    }
+  }
+
+  i {
+    color: #d1e8e2;
+    padding-right: 12px;
+    &:hover {
+      font-size: large;
+      color: #faed26;
+    }
+    @include sm {
+      font-size: 19px;
+    }
+  }
+
+  .email {
+    i {
+      margin-right: 0px;
+    }
+  }
+}
+
+.flag {
+  img {
+    height: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    @include sm {
+      height: 20px;
+    }
+  }
+}
+
+#english-xp,
+#english-about {
+  display: none;
+}
+
+.introbg {
+  p {
+    background-color: #222629;
+    width: fit-content;
+  }
+}
+
+.tabs {
+  font-weight: 200;
+  margin-left: 60px;
+  margin-top: -15px;
+  @include sm {
+    margin: 10px 0px 0px 15px;
+    width: 200px;
+  }
+
+  .tab {
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #222629;
+    padding: 8px 15px;
+    color: #faed26;
+    font-weight: 500;
+    &:hover {
+      font-weight: 600;
+    }
+
+    @include sm {
+      font-size: 15px;
+      padding: 5px 5px;
+      font-weight: 500;
+    }
+  }
+
   .selected {
-        padding: 7px 15px;
-        background-color: #faed26;
-        font-weight: 500;
-        color: #222629;    
-        @include sm{
-            font-size: 16px;
-            padding: 6px 5px;  
-            font-weight: 500; 
-        }
-    }   
+    padding: 7px 15px;
+    background-color: #faed26;
+    font-weight: 500;
+    color: #222629;
+    @include sm {
+      font-size: 16px;
+      padding: 6px 5px;
+      font-weight: 500;
+    }
+  }
 
-  .hidden { 
-        display:none;
+  .hidden {
+    display: none;
+  }
+
+  .about {
+    width: 700px;
+    padding: 3px;
+    height: 100%;
+
+    @include md {
+      width: 600px;
+    }
+    @include rwd(674) {
+      width: 500px;
+    }
+    @include sm {
+      width: 380px;
+    }
+    @include rwd(380) {
+      width: 300px;
     }
 
-    .about{        
-        width: 700px;
-        padding: 3px;
-        height: 100%;
+    p {
+      margin-bottom: 10px;
+    }
 
-        @include md {
-            width: 600px;
+    .mediumlink {
+      color: #d1e8e2;
+      text-decoration: none;
+      background-color: #222629;
+      padding: 3px;
+      font-size: 12px;
+      &:hover {
+        font-weight: 500;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .experience {
+    margin-bottom: 30px;
+
+    .title {
+      display: flex;
+      background-color: #222629;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      width: 800px;
+
+      @include lg {
+        width: 700px;
+      }
+      @include md {
+        width: 550px;
+      }
+      @include rwd(500) {
+        width: 400px;
+      }
+      @include sm {
+        width: 340px;
+      }
+      @include rwd(380) {
+        width: 310px;
+      }
+
+      .ano {
+        margin-top: 5px;
+        margin-right: 20px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .job_role {
+        font-weight: 500;
+      }
+
+      .list {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+  .skills {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+
+    .skills-overview {
+      margin-bottom: 2em;
+      width: 350px;
+      &:hover {
+        font-size: large;
+      }
+      a {
+        font-family: "Fira Code", monospace;
+        text-decoration: none;
+
+        i {
+          color: #d1e8e2;
+          font-size: 1.2em;
+          padding-right: 12px;
+          &:hover {
+            color: #faed26;
+          }
         }
-        @include rwd(674) {
-            width: 500px;
+
+        p {
+          font-size: 1em;
+          color: #d1e8e2;
+          font-weight: 500;
+          &:hover {
+            color: #faed26;
+          }
+        }
+      }
+    }
+
+    #skill-barometer {
+      width: 555px;
+      border-radius: 5px;
+      @include sm {
+        width: 350px;
+      }
+
+      .progressbar {
+        width: 400px;
+        height: 60px;
+        margin-bottom: 25px;
+        font-weight: 500;
+
+        @include rwd(630) {
+          width: 350px;
         }
         @include sm {
-            width: 380px;
-        }
-        @include rwd(380) {
-            width: 300px;
+          width: 300px;
         }
 
-        p{
-            margin-bottom: 10px;
+        p {
+          font-size: 12px;
+          margin-bottom: 10px;
         }
 
-        .mediumlink{
-            color:#d1e8e2;
-            text-decoration: none;
-            background-color: #222629;
-            padding: 3px;
-            font-size: 12px;
-            &:hover{
-                font-weight: 500;
-                font-size: 13px;
-            }            
-        }        
+        div {
+          height: 10px;
+          width: 0;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    width: 555px;
+    border-radius: 5px;
+
+    @include md {
+      width: 400px;
+    }
+    @include sm {
+      width: 350px;
     }
 
-    .experience{   
-        margin-bottom: 30px;  
-        
-        .title{
-            display: flex;            
-            background-color:#222629;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top:5px;
-            margin-bottom: 20px;
-            width: 800px;
-
-            @include lg{
-                width: 700px;
-            }
-            @include md{
-                width: 550px;
-            }
-            @include rwd(500){
-                width: 400px;
-            }
-            @include sm{
-                width: 340px;                
-            }
-            @include rwd(380){
-                width: 310px;
-            }
-            
-            
-            .ano{
-                margin-top: 5px;
-                margin-right: 20px;
-                font-size: 12px;
-                font-weight: 600;
-            }
-
-            .job_role{
-                font-weight: 500;
-            }
-
-            .list{
-                margin-top: 10px;
-                font-size: 14px;       
-            }
-        }
-    }
-    .skills{
-        margin-top: 10px; 
-        margin-bottom: 30px;
-        padding: 5px;
-
-        .skills-overview{
-            margin-bottom: 2em;          
-            width: 350px;
-            &:hover{
-                font-size: large;                
-            } 
-            a{                
-                font-family: 'Fira Code', monospace;
-                text-decoration: none;
-              
-                i{
-                    color:#d1e8e2;
-                    font-size: 1.2em;
-                    padding-right: 12px;
-                    &:hover{                        
-                        color: #faed26;
-                    }               
-               }
-
-                p{
-                    font-size: 1em;                     
-                     color:#d1e8e2;
-                     font-weight: 500;
-                     &:hover{                        
-                        color: #faed26;      
-                     }                    
-                }
-            }
-
-        }
-
-
-        
-        #skill-barometer { 
-            width: 555px;
-            border-radius: 5px;
-            @include sm{
-                width: 350px;                    
-            }
-            
-            .progressbar {
-                width: 400px;
-                height: 60px;
-                margin-bottom: 25px;
-                font-weight: 500;
-
-                @include rwd(630){
-                    width: 350px;
-                }
-                @include sm{
-                    width: 300px;                    
-                }
-                
-                p{
-                    font-size: 12px;
-                    margin-bottom: 10px;
-                }
-                
-                div {           
-                height: 10px;
-                width: 0;
-                }
-            }
-        }
+    @include rwd(380) {
+      width: 300px;
     }
 
-    .portfolio{
-        width: 555px;   
-        border-radius: 5px;
-
-        @include md{
-            width: 400px;                    
+    .links {
+      margin-bottom: 20px;
+      a {
+        margin-bottom: 20px;
+        color: #d1e8e2;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        &:hover {
+          font-weight: 500;
+          font-size: larger;
+          color: #faed26;
         }
-        @include sm{
-            width: 350px;                    
-        }
-
-        @include rwd(380) {
-            width: 300px;
-        }
-
-        .links{                        
-            margin-bottom: 20px;
-            a{
-                margin-bottom: 20px;
-                color:#d1e8e2;
-                text-decoration: none; 
-                font-size: 20px;
-                font-weight: 500;
-                &:hover{
-                    font-weight: 500;
-                    font-size:larger;
-                    color:#faed26;
-                }           
-            }
-            i{
-                margin-bottom: 15px;
-            }
-        }
-
-        img {
-            border: 1px solid  #222629;
-            border-radius: 5px;            
-        }
-
-        .next, .prev{
-            background-color: #272727;
-            border-radius: 10px;           
-        }
-        
-        .caption{            
-            position: static;  
-            padding-bottom: 0px;  
-            margin-bottom: 0px;          
-            a{
-                color:#d1e8e2;
-                text-decoration: none;              
-                &:hover{
-                    color:#faed26;
-                }
-            }            
-        }
-
+      }
+      i {
+        margin-bottom: 15px;
+      }
     }
 
-  
+    img {
+      border: 1px solid #222629;
+      border-radius: 5px;
+    }
 
-    .contact{
-        width: 555px;
-        padding: 10px; 
-        margin-top:5px;
-        border-radius: 5px;
+    .next,
+    .prev {
+      background-color: #272727;
+      border-radius: 10px;
+    }
 
-        .contact_links{
-            margin-bottom: 10px;
-            a{
-                color:#d1e8e2;
-                text-decoration: none;
-                &:hover{
-                    font-weight: 800;
-                    font-size: 18px;
-                }
-                }
-            }
+    .caption {
+      position: static;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      a {
+        color: #d1e8e2;
+        text-decoration: none;
+        &:hover {
+          color: #faed26;
         }
-      
+      }
+    }
+  }
+
+  .contact {
+    width: 555px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+
+    .contact_links {
+      margin-bottom: 10px;
+      a {
+        color: #d1e8e2;
+        text-decoration: none;
+        &:hover {
+          font-weight: 800;
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
-
-
-
