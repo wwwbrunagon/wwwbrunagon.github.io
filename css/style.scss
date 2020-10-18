@@ -48,7 +48,7 @@ $screen-xl-max: 1200px;
 }
 
 body {
-  background-color: #f25116;
+  background-color: #923310;
   color: #d1e8e2;
   margin: 0;
   padding: 0;
@@ -57,10 +57,6 @@ body {
   height: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
-
-  @include md {
-    background-color:  #923310;
-  }
 }
 
 nav {
@@ -228,7 +224,7 @@ nav {
 
     .title {
       display: flex;
-      background-color: #050259;
+      background-color: #262001;
       padding: 10px;
       border-radius: 5px;
       margin-top: 5px;
@@ -343,6 +339,15 @@ nav {
 
     .projetos {
       text-align: center;
+      i,
+      p {
+        color: #262001;
+        font-size: 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
 
       .projeto {
         display: flex;
@@ -350,8 +355,8 @@ nav {
 
         .projeto__link {
           margin-right: 20px;
-          background-color: #050259;
-          padding: 2rem;
+          background-color: #d9cb04;
+          padding: 1rem 2rem;
           color: white;
           margin-top: 3rem;
 
@@ -361,7 +366,7 @@ nav {
 
           .projeto__titulo {
             font-size: 1.6rem;
-            margin-bottom: 1rem;
+            // margin-bottom: 1rem;
           }
         }
       }

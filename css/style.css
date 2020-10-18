@@ -1,5 +1,5 @@
 body {
-  background-color: #f25116;
+  background-color: #923310;
   color: #d1e8e2;
   margin: 0;
   padding: 0;
@@ -8,12 +8,6 @@ body {
   height: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
-}
-
-@media (max-width: 768px) {
-  body {
-    background-color: #923310;
-  }
 }
 
 nav {
@@ -229,7 +223,7 @@ nav .email i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #050259;
+  background-color: #262001;
   padding: 10px;
   border-radius: 5px;
   margin-top: 5px;
@@ -372,6 +366,16 @@ nav .email i {
   text-align: center;
 }
 
+.tabs .portfolio .projetos i,
+.tabs .portfolio .projetos p {
+  color: #262001;
+  font-size: 20px;
+}
+
+.tabs .portfolio .projetos a {
+  text-decoration: none;
+}
+
 .tabs .portfolio .projetos .projeto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,8 +386,8 @@ nav .email i {
 
 .tabs .portfolio .projetos .projeto .projeto__link {
   margin-right: 20px;
-  background-color: #050259;
-  padding: 2rem;
+  background-color: #d9cb04;
+  padding: 1rem 2rem;
   color: white;
   margin-top: 3rem;
 }
@@ -394,7 +398,6 @@ nav .email i {
 
 .tabs .portfolio .projetos .projeto .projeto__link .projeto__titulo {
   font-size: 1.6rem;
-  margin-bottom: 1rem;
 }
 
 .contact {
