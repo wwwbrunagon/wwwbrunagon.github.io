@@ -58,7 +58,7 @@ body {
   overflow-wrap: break-word;
   word-wrap: break-word;
 
-  @include sm {
+  @include md {
     background-color:  #923310;
   }
 }

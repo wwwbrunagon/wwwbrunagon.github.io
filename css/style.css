@@ -10,7 +10,7 @@ body {
   word-wrap: break-word;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   body {
     background-color: #923310;
   }
